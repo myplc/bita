@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>인접선택자, 형제선택자</title>
+    <style>
+      ul p {
+        background-color: blue;
+        color: #fff;
+      }
+      p {
+        background-color: rgb(156, 245, 141);
+      }
+      h1 + p {
+        color: white;
+      }
+      h1 ~ p {
+        border: 1px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <h3><a href="index.html">홈으로</a></h3>
+    <h1>엑스포 안내</h1>
+    <p>반갑습니다.</p>
+    <span>난 신경쓰지마</span>
+    <p>책자를 배부하고 잇습니다.</p>
+    <p>안내데스크를 활용하시길 바랍니다.</p>
+    <!-- ul>(li>p)*2 -->
+    <ul>
+      <li>
+        <p>주중에는 정오 이벤트가 있습니다.</p>
+      </li>
+      <li>
+        <p>주말에는 자정 이벤트가 있습니다.</p>
+      </li>
+    </ul>
+    <p>즐거운 관광 되시길 바랍니다.</p>
+  </body>
+</html>

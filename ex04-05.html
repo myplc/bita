@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>플랙스 wrap</title>
+    <style>
+      .container {
+        width: 300px;
+        height: 400px;
+        border: 5px solid #000;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .container > div {
+        background-color: rgb(66, 109, 110);
+        width: 100px;
+        height: 100px;
+        /* border: 1px solid white; */
+      }
+      .container > div:nth-of-type(2),
+      .container > div:nth-of-type(5) {
+        align-self: flex-end;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </body>
+</html>

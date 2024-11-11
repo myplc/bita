@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>순서목록(Ordered List,List item)</title>
+  </head>
+  <body>
+    <h3><a href="index.html">홈으로</a></h3>
+    <h1>반응형 웹퍼블리싱 학습 순서</h1>
+    <!-- ol>li{HTML}+li{CSS}>ol>li{ex$}*3^^li>strong{Javascript}+ol>li*4 -->
+    <ol start="3">
+      <li>HTML</li>
+      <li>
+        CSS
+        <ol type="i" start="4">
+          <li>ex1</li>
+          <li value="10">ex2</li>
+          <li value="6">ex3</li>
+        </ol>
+      </li>
+      <li>
+        <strong>Javascript</strong>
+        <ol type="a" start="10">
+          <li>Nodejs</li>
+          <li>Express</li>
+          <li>React</li>
+          <li>Vuejs</li>
+        </ol>
+      </li>
+    </ol>
+  </body>
+</html>

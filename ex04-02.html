@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS</title>
+    <style>
+      body {
+        font: 12px "굴림", gulim;
+        margin: 20px;
+      }
+      #box {
+        width: 550px;
+        position: relative;
+        border: 1px dotted #222;
+      }
+      p {
+        width: 130px;
+        height: 80px;
+        padding: 10px;
+        font-weight: bold;
+        color: white;
+        margin: 0;
+      }
+      .myr {
+        background-color: lightcoral;
+        position: relative;
+        z-index: 1;
+      }
+      .myg {
+        background-color: seagreen;
+        position: absolute;
+        left: 50px;
+        top: 30px;
+        z-index: 2;
+        /* opacity: 0.5; */
+      }
+      .myb {
+        background-color: aquamarine;
+        position: relative;
+        left: 30px;
+        top: 10px;
+        z-index: 3;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- div#box>p.my*3 -->
+    <div id="box">
+      <p class="myr">박스의 크기와 위치를 잘 살펴보아야 합니다.</p>
+      <p class="myg">박스의 포지션 속성을 바꿔가며 테스트해 보아야 합니다.</p>
+      <p class="myb">
+        포지션을 이해하기 위해서는 시험해보고 관찰해 보는 것이 절대적으로
+        필요합니다.
+      </p>
+    </div>
+  </body>
+</html>

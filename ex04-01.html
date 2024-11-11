@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>가상선택자 응용</title>
+    <style>
+      h2 {
+        background-color: darkseagreen;
+        width: 293px;
+        height: 35px;
+        text-align: center;
+        color: white;
+        margin-bottom: 3px;
+      }
+      #wrapper {
+        width: 293px;
+        height: 210px;
+        text-align: center;
+        background-color: burlywood;
+      }
+      [class] {
+        float: left;
+        width: 30px;
+        height: 30px;
+        border: 1px solid blue;
+        margin: 5px;
+        font-size: 1.1rem;
+      }
+      /* 7의 배수를 선택 (더하기 3) */
+      div:nth-of-type(7n + 3) {
+        color: red;
+      }
+      div:nth-of-type(7n + 2) {
+        color: blue;
+      }
+      /* 25일이후 부터 선택 */
+      div:nth-of-type(n + 25) {
+        background-color: brown;
+        color: white;
+      }
+      /* 처음부터 8일까지 선택 */
+      div:nth-of-type(-n + 8) {
+        background-color: yellow;
+      }
+      /* 12일 부터 15일까지 시험기간 */
+      div:nth-of-type(n + 12):nth-of-type(-n + 15) {
+        color: red;
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>2024년 11월 달력</h2>
+    <!-- div#wrapper -->
+    <div id="wrapper">
+      <!-- p.e*5 -->
+      <p class="e"></p>
+      <p class="e"></p>
+      <p class="e"></p>
+      <p class="e"></p>
+      <p class="e"></p>
+      <!-- div.box{$}*30 -->
+      <div class="b1wox">1</div>
+      <div class="box">2</div>
+      <div class="bw2wox">3</div>
+      <div class="bos3x">4</div>
+      <div class="bowx">5</div>
+      <div class="bwox">6</div>
+      <div class="bwox">7</div>
+      <div class="box">8</div>
+      <div class="b4ox2">9</div>
+      <div class="box">10</div>
+      <div class="bo4x">11</div>
+      <div class="box">12</div>
+      <div class="bo4x">13</div>
+      <div class="box">14</div>
+      <div class="box">15</div>
+      <div class="bo4x">16</div>
+      <div class="box">17</div>
+      <div class="b15ox">18</div>
+      <div class="bo34x">19</div>
+      <div class="box">20</div>
+      <div class="bo34x">21</div>
+      <div class="box">22</div>
+      <div class="bo44x">23</div>
+      <div class="box">24</div>
+      <div class="box">25</div>
+      <div class="b111ox">26</div>
+      <div class="box">27</div>
+      <div class="box">28</div>
+      <div class="bo34x">29</div>
+      <div class="b1111ox">30</div>
+    </div>
+  </body>
+</html>

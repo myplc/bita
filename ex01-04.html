@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>input응용</title>
+  </head>
+  <body>
+    <h3><a href="index.html">홈으로</a></h3>
+    <fieldset style="width: 300">
+      <legend>이름양식</legend>
+      <form action="myform" method="GET">
+        <label for="First-Name">First name :</label>
+        <input
+          type="text"
+          name="firstName"
+          id="First-Name"
+          placeholder="이름"
+        /><br />
+        <label for="Last-Name">Last name :</label>
+        <input
+          type="text"
+          name="lastName"
+          id="Last-Name"
+          placeholder="성"
+          required
+        /><br />
+        <label for="Age">Age:</label>
+        <input
+          type="number"
+          name="number"
+          id="Age"
+          min="12"
+          max="20"
+          step="1"
+          value="18"
+        /><br />
+
+        checkbox1 : <input type="checkbox" name="chk1" /><br />
+        checkbox2 : <input type="checkbox" name="chk2" checked /><br />
+        radio1 : <input type="radio" name="tip" value="ok1" checked /><br />
+        radio2 : <input type="radio" name="tip" value="ok2" /><br />
+        radio3 : <input type="radio" name="map" value="no1" /><br />
+        radio4 : <input type="radio" name="map" value="no2" checked /><br />
+
+        password: <input type="password" /><br />
+        date: <input type="date" /><br />
+        time: <input type="time" /><br />
+        both: <input type="datetime-local" /><br />
+        file: <input type="file" /> <br />
+        (숨김:)<input type="hidden" name="외모" value="잘생김" />
+        <hr />
+        <input type="submit" value="보내기" />
+        <input type="reset" value="클리어" />
+        <hr />
+        <button type="submit">제출</button>
+        <button type="reset">지움</button>
+      </form>
+    </fieldset>
+  </body>
+</html>

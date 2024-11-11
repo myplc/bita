@@ -1,0 +1,35 @@
+html,
+body {    
+    /* background-color: rgb(201, 201, 166); */
+    height: 100%;
+  }
+
+@media(max-width:1300px){
+    body{
+        color:white;
+        background: url(https://img.freepik.com/premium-photo/minimalistic-blue-sky-with-cumulus-clouds-ai-generated_804788-42634.jpg?w=1060) no-repeat;
+        background-size: cover
+    }
+    h1 {
+        border-bottom: 1px solid black;
+        padding: 10px;
+      }
+}
+@media(max-width:600px){
+    body{
+        color:yellow;
+        background: url(https://cdn.pixabay.com/photo/2014/05/05/17/27/jeju-island-338343_1280.jpg) no-repeat;
+        background-size: cover
+    }
+    h1 {
+        border-bottom: 1px solid rgb(145, 255, 142);
+        padding: 10px;
+      }
+}
+
+
+
+  
+  span {
+    padding: 5px;
+  }
